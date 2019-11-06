@@ -2,22 +2,21 @@
 
 To use this repo:
 
-- Clone or download this repo
-- On the terminal, run
+- Clone or download this repo.
+
+- Installation:
 
   ```javascript
   npm install
   ```
 
-  #### this will install all the dependencies that you need to code with react environment including react, webpack, babel and other loaders.
+* For development, run
 
-- Run
   ```javascript
   npm start
   ```
-  --for development mode
-- Or run
+
+* For production, run
   ```javascript
-  npm build
+  npm run build
   ```
-  --for production mode
