@@ -1,31 +1,54 @@
 {
   "name": "react-webpack-babel",
   "version": "1.0.0",
-  "description": "Boilerplate for react from scratch",
+  "description": "React boilerplate from scratch",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --open --mode development --hot",
-    "build": "webpack --mode production"
+    "start": "webpack-dev-server --open --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js"
   },
-  "keywords": [],
+  "keywords": [
+    "react boilerplate",
+    "webpack",
+    "react",
+    "babel"
+  ],
   "author": "Me-ann Urgel",
   "license": "ISC",
   "dependencies": {
+    "@babel/polyfill": "^7.7.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0"
   },
   "devDependencies": {
     "@babel/core": "^7.7.0",
+    "@babel/plugin-proposal-class-properties": "^7.7.0",
     "@babel/preset-env": "^7.7.1",
     "@babel/preset-react": "^7.7.0",
+    "autoprefixer": "^9.7.1",
     "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^3.2.0",
+    "file-loader": "^4.2.0",
     "html-webpack-plugin": "^3.2.0",
+    "image-webpack-loader": "^6.0.0",
     "node-sass": "^4.13.0",
+    "postcss-loader": "^3.0.0",
     "sass-loader": "^8.0.0",
     "style-loader": "^1.0.0",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10",
-    "webpack-dev-server": "^3.9.0"
-  }
+    "webpack-dev-server": "^3.9.0",
+    "webpack-merge": "^4.2.2"
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "last 2 version",
+    "not dead",
+    "iOS >= 9"
+  ]
 }
